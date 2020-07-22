@@ -136,8 +136,10 @@ class MusicLibraryController
       song_number = song_parts[0]
       song_numbers << song_number
     end
+    
+    song_numbers[input]
       
-      binding.pry
+      #binding.pry
     
       #song_parts = song.split(".")
       #song_number = song_parts[0].to_i
