@@ -135,6 +135,7 @@ class MusicLibraryController
       song_parts = song.split(".")
       song_number = song.parts[0]
       song_numbers << song_number
+    end
       
       binding.pry
     
