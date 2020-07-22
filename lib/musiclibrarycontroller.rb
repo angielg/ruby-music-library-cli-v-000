@@ -143,7 +143,7 @@ class MusicLibraryController
         puts "Playing #{song_name} by #{song_artist}."
       end
       #binding.pry
-    end
+    #end
     
     #binding.pry
   end
