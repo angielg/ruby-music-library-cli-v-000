@@ -1,4 +1,3 @@
-require 'pry'
 class MusicLibraryController
   
   def initialize(path = './db/mp3s')
@@ -38,7 +37,6 @@ class MusicLibraryController
   
   def list_songs
     @song_array = []
-    #binding.pry => []
     abc_songs = Song.all.sort_by{ |song| song.name}
     
     counter = 1
@@ -91,7 +89,6 @@ class MusicLibraryController
     artist = Artist.find_by_name(input)
     
     if artist != nil
-    
       abc_songs = artist.songs.sort_by{ |song| song.name}
      
       abc_songs.collect do |song|
@@ -130,8 +127,8 @@ class MusicLibraryController
   
   def play_song
     puts "Which song number would you like to play?"
-         input = gets.chomp
-         input_number = input.to_i
+    input = gets.chomp
+    #input_number = input.to_i
          
     song_array = []
     
