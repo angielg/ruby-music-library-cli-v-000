@@ -130,6 +130,11 @@ class MusicLibraryController
       counter += 1
     end
     
+    song_number = []
+    song_array.each do |song|
+      song_parts = song.split(".")
+      song_number = song.parts[0]
+      song_numbers << song_number
       
       #binding.pry
     
