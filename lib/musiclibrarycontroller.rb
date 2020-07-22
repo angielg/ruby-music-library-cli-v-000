@@ -130,7 +130,7 @@ class MusicLibraryController
       counter += 1
     end
     
-    song_number = []
+    song_numbers = []
     song_array.each do |song|
       song_parts = song.split(".")
       song_number = song_parts[0]
