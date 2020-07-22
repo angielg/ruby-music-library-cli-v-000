@@ -138,7 +138,7 @@ class MusicLibraryController
       song_numbers << song_number
     end
     
-    song_numbers[input_number]
+    puts "Playing #{song_numbers[input_number]}
       
       #binding.pry
     
