@@ -140,7 +140,7 @@ class MusicLibraryController
        song_info = song_parts[1].split(" -")
        song_artist = song_info[0]
        song_name = song_info[1]
-       puts "Playing #{song_name} by #{song_artist}"
+       puts "Playing#{song_name} by#{song_artist}"
       end
       
       
