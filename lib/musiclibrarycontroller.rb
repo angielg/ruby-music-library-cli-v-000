@@ -128,8 +128,7 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     input = gets.chomp
-    #input_number = input.to_i
-         
+    
     song_array = []
     
     abc_songs = Song.all.sort_by{ |song| song.name}
