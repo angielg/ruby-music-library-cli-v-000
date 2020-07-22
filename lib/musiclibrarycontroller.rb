@@ -142,12 +142,12 @@ class MusicLibraryController
       #song_parts = song.split(".")
       #song_number = song_parts[0].to_i
       
-      if song_number == input
-        song_info = song_parts[1].split("-")
-        song_artist = song_info[0]
-        song_name = song_info[1]
-        puts "Playing #{song_name} by #{song_artist}."
-      end
+      #if song_number == input
+       # song_info = song_parts[1].split("-")
+       # song_artist = song_info[0]
+       # song_name = song_info[1]
+       # puts "Playing #{song_name} by #{song_artist}."
+     # end
       #binding.pry
     #end
     
