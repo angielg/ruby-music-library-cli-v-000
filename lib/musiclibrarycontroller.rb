@@ -119,6 +119,7 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
          input = gets.chomp
+         input_number = input.to_i
          
     song_array = []
     
@@ -133,7 +134,7 @@ class MusicLibraryController
     song_numbers = []
     song_array.each do |song|
       song_parts = song.split(".")
-      song_number = song_parts[0].to_i
+      song_number = song_parts[0]
       song_numbers << song_number
     end
     
