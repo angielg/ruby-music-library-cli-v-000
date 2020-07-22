@@ -121,8 +121,16 @@ class MusicLibraryController
          input = gets.chomp
          
     song_array = []
-    Song.all.each do |song|
-      song_array << song
+    
+    abc_songs = Song.all.sort_by{ |song| song.name}
+    
+    counter = 1
+    abc_songs.collect do |song|
+      song_array << "#{counter}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+      counter += 1
+    end
+    
+      
       binding.pry
     #list_songs.each do |song|
       #song_parts = song.split(".")
