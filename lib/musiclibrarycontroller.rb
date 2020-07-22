@@ -131,7 +131,6 @@ class MusicLibraryController
       counter += 1
     end
     
-    #song_numbers = []
     song_array.each do |song|
       song_parts = song.split(".")
       song_number = song_parts[0]
@@ -142,40 +141,6 @@ class MusicLibraryController
        song_name = song_info[1]
        puts "Playing#{song_name} by#{song_artist}"
       end
-      
-      
-      #song_numbers << song_number
     end
-    
-    #selected_song = song_numbers[input_number]
-      
-      #binding.pry
-    
-      #song_parts = song.split(".")
-      #song_number = song_parts[0].to_i
-      
-      
-      #binding.pry
-    #end
-    
-    #binding.pry
   end
-    
-    #def list_songs
-    #song_array = []
-    
-    #abc_songs = Song.all.sort_by{ |song| song.name}
-    
-    #counter = 1
-    #abc_songs.collect do |song|
-      #song_array << "#{counter}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
-      #counter += 1
-    #end
-    
-    #song_array.each do |song|
-      #puts "#{song}"
-    #end
-  #end
-  
- 
 end
