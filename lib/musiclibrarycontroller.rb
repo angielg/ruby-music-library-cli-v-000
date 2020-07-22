@@ -90,7 +90,7 @@ class MusicLibraryController
     song_array = []
     artist = Artist.find_by_name(input)
     
-    dif artist != nil
+    if artist != nil
     
       abc_songs = artist.songs.sort_by{ |song| song.name}
      
