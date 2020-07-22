@@ -133,7 +133,7 @@ class MusicLibraryController
     song_number = []
     song_array.each do |song|
       song_parts = song.split(".")
-      song_number = song.parts[0]
+      song_number = song_parts[0]
       song_numbers << song_number
     end
       
